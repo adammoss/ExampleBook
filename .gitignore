@@ -1,0 +1,16 @@
+_build/*
+
+# IPython Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating system generated files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+#PyCharm
+.idea*
+

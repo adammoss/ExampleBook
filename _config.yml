@@ -1,0 +1,85 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: PHYSXXXX
+author: Adam Moss
+#logo: Figures/UoNTransparent.png
+#   image_light: Figures/UoNTransparent.png
+#   image_dark: Figures/UoNTransparentDark.png
+only_build_toc_files: true
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+  allow_error: true #Useful if you really want to show students an error!
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+
+# html:
+#     extra_navbar: |
+#         <div class="command">
+#         </div>
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - dollarmath
+    - amsmath
+    - colon_fence
+    - linkify
+
+sphinx:
+  extra_extensions:
+    - sphinx_proof
+    - sphinx_exercise
+  config:
+    myst_heading_anchors: 7
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    nb_custom_formats:
+      .Rmd:
+        - jupytext.reads
+        - fmt: Rmd
+
+    mathjax3_config:
+      tex:
+        macros:
+          "myfrac": [ "\\frac{#1}{#2}",2 ]
+          "argmax": [ "\\operatorname*{arg\\,max}" ]
+          "ptl": "\\partial"
+          "partd": [ "\\frac{\\ptl#1}{\\ptl#2}",2 ]
+
+    html_theme_options:
+       logo:
+         image_light: Figures/UoNTransparent.png
+         image_dark: Figures/UoNTransparentDark.png
+
+# Add a bibtex file so that we can create citations
+#bibtex_bibfiles:
+#  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/adammoss/  # Online location of your book
+  path_to_book: ExampleBook  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+# # Add GitHub buttons to your book
+# # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# #html:
+#   use_issues_button: true
+#   use_repository_button: true
+
+launch_buttons:
+  thebe: true
+  notebook_interface: "classic"
+  colab_url: "https://colab.research.google.com"
+
+#sphinx:
+#  config:
+#    html_theme: pydata_sphinx_theme

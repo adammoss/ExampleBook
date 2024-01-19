@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: main
+defaults: # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: False
+  maxdepth: 2 #Controls the depth of the table of contents on a page
+  numbered: 2
+chapters:
+  - file: Chapters/test.md
