@@ -1,0 +1,51 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.title {
+  background-color: rgba(228, 131, 5, 0.0);
+  border-color: rgba(245, 149, 5, 0.0);
+ }
+
+h1 {
+  background-color: rgba(228, 131, 5, 0.1);      /* rgba(207, 0, 15, 0.2) is a red */
+  border-top: solid;
+  border-right:solid;
+  border-bottom: solid;
+  border-color: rgb(245, 149, 5);
+  border-radius: 0 30px 30px 0;
+  padding-left: 5px;
+  /*display: table-caption;*/
+  width: 75%;
+}
+
+div.definition, div.theorem {
+  background-size: contain;
+  border-left: solid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;                          /* Gives space around definition box */
+  padding: 5px;
+}
+
+div.definition{
+  background-color: rgba(207, 0, 15, 0.1);       /* red background */
+  border-color: rgba(207, 0, 15);
+}
+
+div.theorem{
+  background-color: rgba(11, 108, 199,0.1);       /* blue background */
+  border-color: rgba(11, 108, 199);
+}
