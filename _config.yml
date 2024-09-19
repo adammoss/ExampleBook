@@ -53,6 +53,10 @@ sphinx:
           "argmax": [ "\\operatorname*{arg\\,max}" ]
           "ptl": "\\partial"
           "partd": [ "\\frac{\\ptl#1}{\\ptl#2}",2 ]
+        packages: 
+          "[+]": ["mathtools", "physics"]
+      loader:
+        load: ["[tex]/mathtools", "[tex]/physics"]
 
     html_theme_options:
        logo:

@@ -1,4 +1,4 @@
-# Radioactivity
+# Radioactivity Example
 
 ## Units
 

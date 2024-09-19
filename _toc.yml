@@ -8,4 +8,5 @@ defaults: # The defaults key will be applied to all chapters and sub-sections
   maxdepth: 2 #Controls the depth of the table of contents on a page
   numbered: 2
 chapters:
-  - file: Chapters/test.md
+  - file: Chapters/maths.md
+  - file: Chapters/example.md
