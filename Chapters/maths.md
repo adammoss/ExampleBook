@@ -95,18 +95,17 @@ User defined *macros* can be added into the `_config.yml` file. They should be d
         tex:
 	        macros:
 
-The syntax is a little awkward and not discussed further here ,but as examples, `_config.yml` contains `\myfrac`, `\argmax` and `\partd`:
+The syntax is a little awkward and not discussed further here, but as examples, `_config.yml` contains common latex macros with Mathjax comptatible versions: 
 
-$$\myfrac{1}{2}$$  
+- `\bm`
 
-$$\argmax_{x \in X} |x|$$
-   
-$$\partd{f}{x},\quad \partd{f}{y}$$
+For example, 
 
+$$\bm{\epsilon}=\mathbf{e}_z$$ 
 
 ## MathJax extensions
 
-[MathsJax extensions](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html) can be in loaded by editing the config, e.g.
+[MathJax extensions](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html) can be in loaded by editing the config, e.g.
 
 	sphinx:
 	  mathjax3_config:
@@ -115,6 +114,7 @@ $$\partd{f}{x},\quad \partd{f}{y}$$
         loader:
           load: ["[tex]/mathtools", "[tex]/physics", "[tex]/color"]
 
+For example, 
 
 ```{math}
 z=\frac{\splitfrac{ab+cd+ef+gh+ij}{+kl+mn+op+qr}}{y}

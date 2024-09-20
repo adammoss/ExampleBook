@@ -49,14 +49,11 @@ sphinx:
     mathjax3_config:
       tex:
         macros:
-          "myfrac": [ "\\frac{#1}{#2}",2 ]
-          "argmax": [ "\\operatorname*{arg\\,max}" ]
-          "ptl": "\\partial"
-          "partd": [ "\\frac{\\ptl#1}{\\ptl#2}",2 ]
+          "bm": ["\\boldsymbol{#1}", 1]
         packages: 
-          "[+]": ["mathtools", "physics"]
+          "[+]": ["mathtools", "physics", "boldsymbol"]
       loader:
-        load: ["[tex]/mathtools", "[tex]/physics"]
+        load: ["[tex]/mathtools", "[tex]/physics", "[tex]/boldsymbol"]
 
     html_theme_options:
        logo:
